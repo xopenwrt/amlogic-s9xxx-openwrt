@@ -53,7 +53,7 @@ runs:
         echo -e "PACKAGED_STATUS: success"
         echo -e "PACKAGED_OUTPUTPATH files list:"
         echo -e "$(ls ${PWD}/out 2>/dev/null) \n"
-        mv out/* ${GITHUB_WORKSPACE}/openwrt/bin/targets/*/*/
+        cp out/* ${GITHUB_WORKSPACE}/openwrt/bin/targets/*/*/
 branding:
   icon: 'terminal'
   color: 'gray-dark'
